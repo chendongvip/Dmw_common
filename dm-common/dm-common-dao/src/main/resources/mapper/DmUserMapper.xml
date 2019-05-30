@@ -148,7 +148,7 @@
         </trim>
     </select>
 
-    <insert id="insertDmUser" parameterType="cn.dm.pojo.DmUser">
+    <insert id="insertDmUser"  useGeneratedKeys="true" keyProperty="id" keyColumn="id" parameterType="cn.dm.pojo.DmUser">
         insert into dm_user(
                         phone,
                         password,

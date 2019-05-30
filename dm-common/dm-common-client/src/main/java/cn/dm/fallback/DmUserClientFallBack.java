@@ -53,4 +53,9 @@ public class DmUserClientFallBack implements RestDmUserClient {
     public String generateToken(DmUser dmUser) {
         return null;
     }
+
+    @Override
+    public Integer createWxUser(DmUser dmUser) throws Exception {
+        return null;
+    }
 }
