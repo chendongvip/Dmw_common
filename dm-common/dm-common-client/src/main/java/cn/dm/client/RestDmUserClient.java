@@ -22,6 +22,9 @@ public interface RestDmUserClient {
     @RequestMapping(value = "/getDmUserById", method = RequestMethod.POST)
     public DmUser getDmUserById(@RequestParam("id") Long id) throws Exception;
 
+    @RequestMapping(value = "/getDmUserByWxUserId", method = RequestMethod.POST)
+    public DmUser getDmUserByWxUserId(@RequestParam("wxUserId") String wxUserId) throws Exception;
+
     @RequestMapping(value = "/getDmUserListByMap", method = RequestMethod.POST)
     public List<DmUser> getDmUserListByMap(@RequestParam Map<String, Object> param) throws Exception;
 

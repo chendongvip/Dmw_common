@@ -16,6 +16,8 @@ public interface DmUserMapper {
 
     public DmUser getDmUserById(@Param(value = "id") Long id) throws Exception;
 
+    public DmUser getDmUserByWxUserId (@Param(value = "wxUserId") String wxUserId) throws Exception;
+
     public List<DmUser> getDmUserListByMap(Map<String, Object> param) throws Exception;
 
     public Integer getDmUserCountByMap(Map<String, Object> param) throws Exception;

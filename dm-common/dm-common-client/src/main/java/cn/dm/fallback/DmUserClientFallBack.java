@@ -20,6 +20,11 @@ public class DmUserClientFallBack implements RestDmUserClient {
     }
 
     @Override
+    public DmUser getDmUserByWxUserId(String wxUserId) throws Exception {
+        return null;
+    }
+
+    @Override
     public List<DmUser>	getDmUserListByMap(Map<String,Object> param)throws Exception{
         return null;
     }
