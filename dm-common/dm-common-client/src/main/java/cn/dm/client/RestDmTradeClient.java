@@ -4,7 +4,7 @@ import cn.dm.pojo.DmTrade;
 import cn.dm.fallback.DmTradeClientFallBack;
 import java.util.List;
 import java.util.Map;
-
+import cn.dm.vo.DmItemMessageVo;
 import cn.dm.config.DmConfiguration;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,4 +31,7 @@ public Integer qdtxAddDmTrade(@RequestBody DmTrade dmTrade)throws Exception;
 
 @RequestMapping(value = "/qdtxModifyDmTrade",method = RequestMethod.POST)
 public Integer qdtxModifyDmTrade(@RequestBody DmTrade dmTrade)throws Exception;
+
+@RequestMapping(value = "/insertTrade", method = RequestMethod.POST)
+public Integer insertTrade(@RequestBody DmItemMessageVo dmItemMessageVo) throws Exception;
 }

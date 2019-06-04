@@ -43,4 +43,14 @@ public class DmOrderClientFallBack implements RestDmOrderClient {
     public Long deleteDmOrderById(Long id) throws Exception {
         return null;
     }
+
+    @Override
+    public boolean processed(String orderNo, Integer flag) throws Exception {
+        return false;
+    }
+
+    @Override
+    public DmOrder getDmOrderByOrderNo(String orderNo) throws Exception {
+        return null;
+    }
 }
